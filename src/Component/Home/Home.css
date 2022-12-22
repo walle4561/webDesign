@@ -1,0 +1,76 @@
+.home-page{
+  background-color: #fff;
+}
+.warp{
+  position:relative;
+  top: 0px;
+}
+.list1 {
+  position: absolute;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 234px;
+  color: aliceblue;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  height: 100%;
+}
+.list1 a {
+  padding: 10px;
+  font-size: 14px;
+}
+.warp{
+  height: 100%;
+}
+.ListItem {
+  display: flex;
+  justify-content: space-between;
+}
+.carousel-indicators {
+  justify-content: end;
+  margin: 0px;
+  padding: 10px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px !important;
+  height: 10px !important;
+  border: 1px solid transparent !important;
+  border-radius: 10px;
+  z-index: 3;
+}
+.carousel-control-prev {
+  left: 234px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 41px;
+  height: 69px;
+  top: 230px;
+}
+.carousel-control-prev:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+.carousel-control-next {
+  width: 46px;
+}
+
+.carousel-control-next:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+.home-invite-img {
+  width: 1226px;
+  height: 120px;
+}
+.subhome-page{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+.subhome-page a {
+  margin-bottom: 10px;
+}
+.home-page .list1 a:hover{
+  background-color: #ff6700;
+}

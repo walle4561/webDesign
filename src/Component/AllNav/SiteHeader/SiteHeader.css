@@ -1,0 +1,160 @@
+.site-header{
+  display:flow-root;
+  background-color: #fff;
+}
+.doodle .link-block {
+  display: block;
+  width: 168px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-indent: -999em;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.ad-gif {
+  height: 100px;
+}
+.shop-categories {
+  height: 100px;
+}
+.milogo {
+  display: flex;
+  position: relative;
+  float: left;
+  height: 100%;
+  z-index: 101;
+}
+.milogo .milogo-wrapper {
+  line-height: 100px;
+  height: 100px;
+  width: 56px;
+  overflow: hidden;
+  background: url(//i01.appmifile.com/webfile/globalimg/pandora/mi-logo-bg.svg)
+    no-repeat left center;
+  background-size: 56px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.milogo img {
+  vertical-align: middle;
+  margin-left: -56px;
+  transition: all 0.2s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
+}
+.milogo img:hover {
+  margin-left: 0px;
+}
+.categories-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-category a{
+  transition: color 0.4s ease;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: color;
+  font-size: 16px;
+  height: 16px;
+  color: #424242;
+  margin: 0 15px;
+  cursor: default;
+}
+.main-category:hover {
+  color: #e68751;
+}
+.search-section{
+  margin-top: 25px;
+  float: right;
+}
+.form-control {
+  width: 253px;
+  border-radius: 0px;
+  font-size: 12px;
+  padding: 0px 15px;
+}
+.search-form {
+  position: relative;
+  display: flex;
+  z-index: 1;
+  flex-direction: row;
+  justify-content: end;
+}
+.btn{
+  border-radius: 0px;
+  border-left: 0px;
+}
+.btnSearch {
+  height: 50px;
+  --bs-btn-bg: #fff;
+  --bs-btn-color: #000000;
+  --bs-btn-border-color: #dfdfdf;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #de4c0c;
+  --bs-btn-hover-border-color: #de4c0c;
+  --bs-btn-focus-shadow-rgb: 25, 135, 84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #de4c0c;
+  --bs-btn-active-border-color: #de4c0c;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #de4c0c;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #de4c0c;
+  --bs-gradient: none;
+}
+.form-control:hover + .btnSearch {
+  background-color: #de4c0c;
+}
+.hot-word {
+  position: absolute;
+  font-size: 12px;
+  top: 15px;
+  right: 50px;
+  white-space: nowrap;
+  text-align: right;
+}
+.hot-word a {
+  display: inline-block;
+  background-color: #dfdfdf;
+  padding: 1px 3px;
+  margin-left: 5px;
+  color: #424242;
+}
+.main-category {
+  display: table-cell;
+  vertical-align: middle;
+}
+.main-category {
+  display: table-cell;
+  vertical-align: middle;
+}
+.shop-categories {
+  display: flex;
+  justify-content: space-between;
+  float: left;
+}
+.ategories-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.shop-categories .products-exhibit {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 230px;
+  border-top: 1px solid #eee;
+  display: none;
+}
