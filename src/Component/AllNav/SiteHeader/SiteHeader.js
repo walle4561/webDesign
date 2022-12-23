@@ -1,85 +1,111 @@
-import { Button, Form, Container } from "react-bootstrap";
-import { BsSearch } from "react-icons/bs";
+import { Container, ListGroup } from "react-bootstrap";
+import { FaSistrix } from "react-icons/fa";
+import { BsChevronRight } from "react-icons/bs";
 import "./SiteHeader.css";
 import navEle from "./navEleData";
 import navItem from "./navItem";
+import listBar from "./listBarData";
 
 const siteHeader = () => {
   const navEles = navEle.map((list) => (
-    <dl className="mean">
+    <dl className="nav-item">
       <dt className="main-category">
         <a>{list.content}</a>
       </dt>
       <dd className="products-exhibit">
-        <Container>
-          <div className="nav-Item">
-            {console.log(list.key)}
-            {navItem[list.key].map((list1) => (
-              <div className="main-product">
-                <img className="prodcut-img" src={list1.ImgLink}></img>
-                <a href={list1.Link} className="product-name">
-                  {list1.name}
-                </a>
-                <span className="product-price">{list1.price}</span>
-              </div>
-            ))}
-          </div>
+        <Container className="products-exhibit-wrapper">
+          {console.log(list.key)}
+          {navItem[list.key].map((list1) => (
+            <div className="main-product">
+              <img
+                className="prodcut-img"
+                src={"list1.ImgLink"}
+                alt={list1.name}
+                style={{ width: `140px`, height: `140px` }}
+              ></img>
+              <a href={list1.Link} className="product-name">
+                {list1.name}
+              </a>
+              <span className="product-price">{list1.price}</span>
+            </div>
+          ))}
         </Container>
       </dd>
     </dl>
   ));
 
+  const listBars = listBar.map((list) => (
+    <ListGroup.Item action href="#link1" className="ListItem">
+      {list.content}
+      <BsChevronRight />
+    </ListGroup.Item>
+  ));
+
   return (
     <div className="site-header">
-      <Container>
-        <div className="navBar-container">
-          <div className="milogo">
-            <div className="milogo-wrapper">
-              <img src="https://i01.appmifile.com/webfile/globalimg/pandora/mi-logo.svg" />
-            </div>
-          </div>
-
-          <div className="shop-categories" id="J_shopCategories">
-            <div className="doodle" style={{ display: "block" }}>
-              <a
-                className="link-block"
-                href="https://event.mi.com/tw/huiyuanquanyi"
-                style={{
-                  backgroundImage: `url("https://i01.appmifile.com/webfile/globalweb/picture/lingquan-pc.gif")`,
-                }}
-              >
-                {" "}
-              </a>
-            </div>
-            <div className="categories-wrapper J_navMainList">
-              {navEles}
-              <dl className="mean">
-                <dt className="main-category">
-                  <a href="https://www.mi.com/tw/service/">服務</a>
-                </dt>
-              </dl>
-            </div>
-          </div>
-
-          <div className="search-section">
-            <Form className="search-form">
-              <Form.Control
-                type="search"
-                placeholder="搜尋商品"
-                aria-label="Search"
-              />
-              <Button className="btnSearch">
-                <BsSearch />
-              </Button>
-              <div className="hot-word">
-                <a href="https://www.mi.com/tw/xiaomi-12-pro/">
-                  Xiaomi 12 系列
-                </a>
+      <div className="curtain">
+        <Container>
+          <div className="navBar-container">
+            <div className="milogo">
+              <div className="milogo-wrapper">
+                <img src="https://i01.appmifile.com/webfile/globalimg/pandora/mi-logo.svg" />
               </div>
-            </Form>
+              <div className="doodle" style={{ display: "block" }}>
+                <a
+                  className="link-block"
+                  href="https://event.mi.com/tw/huiyuanquanyi"
+                  style={{
+                    backgroundImage: `url("https://i01.appmifile.com/webfile/globalweb/picture/lingquan-pc.gif")`,
+                  }}
+                />
+              </div>
+            </div>
+
+            <div className="shop-categories" id="J_shopCategories">
+              <div className="categories-wrapper J_navMainList">
+                <div className="nav-category nav-category-toggled">
+                  <div className="btn-category-list">
+                    <ListGroup>{listBars}</ListGroup>
+                  </div>
+                </div>
+                {navEles}
+                <dl className="nav-item">
+                  <dt className="main-category">
+                    <a href="https://www.mi.com/tw/service/">服務</a>
+                  </dt>
+                </dl>
+              </div>
+              <div class="search-section">
+                <form class="search-form clearfix">
+                  <input
+                    class="search-text J_searchText"
+                    type="search"
+                    name="keyword"
+                    placeholder="搜尋商品"
+                  ></input>
+                  <div class="hot-words">
+                    <a href="https://www.mi.com/tw/product/xiaomi-curved-gaming-monitor-30/">
+                      Xiaomi 30 型 電競曲面螢幕
+                    </a>
+                  </div>
+                  <a
+                    class="search-btn"
+                    style={{
+                      display: `flex`,
+                      alignItems: `center`,
+                      justifyContent: `center`,
+                    }}
+                  >
+                    <FaSistrix></FaSistrix>
+                  </a>
+                </form>
+              </div>
+            </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
+      <div></div>
+      <div></div>
     </div>
   );
 };

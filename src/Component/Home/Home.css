@@ -4,27 +4,7 @@
 .warp{
   position:relative;
   top: 0px;
-}
-.list1 {
-  position: absolute;
-  top: 0px;
-  background: rgba(0, 0, 0, 0.6);
-  width: 234px;
-  color: aliceblue;
-  padding-top: 20px;
-  padding-bottom: 30px;
   height: 100%;
-}
-.list1 a {
-  padding: 10px;
-  font-size: 14px;
-}
-.warp{
-  height: 100%;
-}
-.ListItem {
-  display: flex;
-  justify-content: space-between;
 }
 .carousel-indicators {
   justify-content: end;

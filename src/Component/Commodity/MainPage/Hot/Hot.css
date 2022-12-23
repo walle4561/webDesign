@@ -3,8 +3,8 @@
   text-align: center;
   z-index: 1;
 }
-.hot-product .container{
-
+.hot-product-list .card{
+  border-radius: 0px;
 }
 .hot-product .hot-product-list {
   display: flex;

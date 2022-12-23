@@ -1,12 +1,9 @@
-import { BsChevronRight } from "react-icons/bs";
-import { Carousel, Container, ListGroup } from "react-bootstrap";
+import { Carousel, Container } from "react-bootstrap";
 import Star from "./Star/StarCommodity";
 import img from "./imgData";
-import listBar from "./listBarData";
 import "./Home.css";
 
 const Home = () => {
-  
   const lists = img.map((list) => (
     <Carousel.Item>
       <img
@@ -16,12 +13,6 @@ const Home = () => {
       />
     </Carousel.Item>
   ));
-  const listBars = listBar.map((list) => (
-    <ListGroup.Item action href="#link1" className="ListItem">
-      {list.content}
-      <BsChevronRight />
-    </ListGroup.Item>
-  ));
 
   return (
     <>
@@ -29,9 +20,8 @@ const Home = () => {
         <Container>
           <div className="warp">
             <div className="Carousel1">
-              <Carousel>{lists}</Carousel>
+              <Carousel fade={true}>{lists}</Carousel>
             </div>
-            <div className="list1">{listBars}</div>
           </div>
           <div className="subhome-page">
             <a href="https://www.mi.com/tw/product/redmi-10c/">
