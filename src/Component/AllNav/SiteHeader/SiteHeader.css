@@ -152,35 +152,28 @@
   justify-content: space-between;
 }
 .shop-categories .products-exhibit {
+  display: block;
   position: absolute;
   top: 100px;
-  left: 0;
+  left: 0px;
   width: 100%;
+  max-height: 0px;
   border-top: 1px solid #eee;
   background-color: #fff;
-  max-height: 0px;
-  display: flex;
-  z-index: 0;
   justify-content: center;
+  transition: max-height 0.5s;
 }
 .mean:hover + .mean .products-exhibit {
   max-height: 230px;
-  z-index: 10;
+  z-index: 8;
 }
 .nav-Item {
-  position: absolute;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .main-product {
   text-align: center;
   width: 100%;
 }
-.products-exhibit .container {
-  margin: 20px 0;
-}
-
 .main-product .product-price {
   display: block;
   color: #ff6700;

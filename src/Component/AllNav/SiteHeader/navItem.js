@@ -172,69 +172,80 @@ const navItem = [
   [
     {
       price: "NT$ 15999 起",
-      ImgLink: "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/TV-55.png?width=140&height=140",
+      ImgLink:
+        "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/TV-55.png?width=140&height=140",
       name: "小米智慧顯示器",
-      Link: "https://buy.mi.com/tw/search_%E6%99%BA%E6%85%A7%E9%A1%AF%E7%A4%BA%E5%99%A8",
+      Link: "",
     },
     {
       price: "NT$ 665起",
-      ImgLink: "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/1605592817.5.png?width=140&height=140",
+      ImgLink:
+        "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/1605592817.5.png?width=140&height=140",
       name: "攝影機",
-      Link: "https://buy.mi.com/tw/accessories/168",
+      Link: "",
     },
     {
       price: "NT$ 1,595",
-      ImgLink: "https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/800.png?width=140&height=140",
+      ImgLink:
+        "https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/800.png?width=140&height=140",
       name: "Redmi Buds 3 Pro",
-      Link: "https://www.mi.com/tw/product/redmi-buds-3-pro/",
+      Link: "",
     },
     {
       price: "NT$ 1995",
-      ImgLink: "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/xiaomi-smart-band-7-pro.png?width=140&height=140",
+      ImgLink:
+        "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/xiaomi-smart-band-7-pro.png?width=140&height=140",
       name: "Xiaomi 手環7 Pro",
-      Link: "https://www.mi.com/tw/product/xiaomi-smart-band-7-pro/",
+      Link: "",
     },
     {
       price: "NT$ 695",
-      ImgLink: "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/wifi-range-extender-ac1200.png?width=140&height=140",
+      ImgLink:
+        "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/wifi-range-extender-ac1200.png?width=140&height=140",
       name: "WiFi 訊號延伸器 AC1200",
-      Link: "https://www.mi.com/tw/product/mi-wifi-range-extender-ac1200",
+      Link: "",
     },
     {
       price: "NT$1895",
-      ImgLink: "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/xiaomi-smart-doorbell-3.png?width=140&height=140",
+      ImgLink:
+        "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/xiaomi-smart-doorbell-3.png?width=140&height=140",
       name: "Xiaomi 智慧門鈴 3",
-      Link: "https://www.mi.com/tw/product/xiaomi-smart-doorbell-3/",
+      Link: "",
     },
   ],
   [
     {
       price: "NT$325",
-      ImgLink: "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/4174289.png?width=140&height=140",
+      ImgLink:
+        "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/4174289.png?width=140&height=140",
       name: "33W 快速充電器 1A1C版",
       Link: "https://www.mi.com/tw/product/mi-33w-wall-charger-type-a-type-c-us/",
     },
     {
       price: "NT$ 1395",
-      ImgLink: "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/xiaomi-50w-wireless.png?width=140&height=140",
+      ImgLink:
+        "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/xiaomi-50w-wireless.png?width=140&height=140",
       name: "直立風冷無線充電座 50W",
       Link: "https://www.mi.com/tw/product/xiaomi-50w-wireless-charging-stand/",
     },
     {
       price: "NT$ 395",
-      ImgLink: "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/pms158677033447231966.png?width=140&height=140",
+      ImgLink:
+        "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/pms158677033447231966.png?width=140&height=140",
       name: "小米延長線",
       Link: "https://www.mi.com/tw/mi-power-strip-3-outlet-3-USB/",
     },
     {
       price: "NT$ 435",
-      ImgLink: "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/pms_1578450158.98451188.png?width=140&height=140",
+      ImgLink:
+        "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/pms_1578450158.98451188.png?width=140&height=140",
       name: "小米行動電源 3 快充版",
       Link: "https://buy.mi.com/tw/item/3195200004",
     },
     {
       price: "NT$ 795",
-      ImgLink: "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/3195200010.png?width=140&height=140",
+      ImgLink:
+        "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/3195200010.png?width=140&height=140",
       name: "空淨濾芯 除甲醛增強版 S1",
       Link: "https://buy.mi.com/tw/item/3195200010",
     },

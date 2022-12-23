@@ -13,13 +13,14 @@ const siteHeader = () => {
       <dd className="products-exhibit">
         <Container>
           <div className="nav-Item">
-            {navItem[list.key].map((list) => (
+            {console.log(list.key)}
+            {navItem[list.key].map((list1) => (
               <div className="main-product">
-                <img className="prodcut-img" src={list.ImgLink}></img>
-                <a href={list.Link} className="product-name">
-                  {list.name}
+                <img className="prodcut-img" src={list1.ImgLink}></img>
+                <a href={list1.Link} className="product-name">
+                  {list1.name}
                 </a>
-                <span className="product-price">{list.price}</span>
+                <span className="product-price">{list1.price}</span>
               </div>
             ))}
           </div>

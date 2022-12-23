@@ -1,6 +1,8 @@
 .container {
   width: 1226px;
   --bs-gutter-x: 0rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 img {
   border: 0;
