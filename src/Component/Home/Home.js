@@ -1,55 +1,12 @@
 import { BsChevronRight } from "react-icons/bs";
 import { Carousel, Container, ListGroup } from "react-bootstrap";
 import Star from "./Star/StarCommodity";
-
+import img from "./imgData";
+import listBar from "./listBarData";
 import "./Home.css";
+
 const Home = () => {
-  const img = [
-    {
-      id: 1,
-      link: "https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/11-proplus-pc.png?width=1226&height=460",
-    },
-    {
-      id: 2,
-      link: "https://i01.appmifile.com/webfile/globalweb/picture/poco40-pc.jpg?width=1226&height=460",
-    },
-    {
-      id: 3,
-      link: "https://i01.appmifile.com/webfile/globalweb/picture/20221208-153001.jpg?width=1226&height=460",
-    },
-    {
-      id: 4,
-      link: "https://i01.appmifile.com/webfile/globalweb/picture/dengdai-pc.jpg?width=1226&height=460",
-    },
-    {
-      id: 5,
-      link: "https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/12t-pc-1111.png?width=1226&height=460",
-    },
-    {
-      id: 6,
-      link: "https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/poco-m5s-pc.jpg?width=1226&height=460",
-    },
-    {
-      id: 7,
-      link: "https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/poco-m5s-pc.jpg?width=1226&height=460",
-    },
-    {
-      id: 8,
-      link: "https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/poco-m5s-pc.jpg?width=1226&height=460",
-    },
-  ];
-  const listBar = [
-    { content: "手機" },
-    { content: "視聽娛樂" },
-    { content: "智慧家電" },
-    { content: "旅行穿戴" },
-    { content: "智慧科技" },
-    { content: "電員3C配件" },
-    { content: "耳機音響" },
-    { content: "健康護理" },
-    { content: "生活周邊" },
-    { content: "全部配件分類" },
-  ];
+  
   const lists = img.map((list) => (
     <Carousel.Item>
       <img
@@ -65,6 +22,7 @@ const Home = () => {
       <BsChevronRight />
     </ListGroup.Item>
   ));
+
   return (
     <>
       <div className="home-page">

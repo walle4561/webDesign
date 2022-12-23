@@ -1,6 +1,7 @@
-.site-header{
-  display:flow-root;
+.site-header {
+  display: flow-root;
   background-color: #fff;
+  position: relative;
 }
 .doodle .link-block {
   display: block;
@@ -54,13 +55,13 @@
 .milogo img:hover {
   margin-left: 0px;
 }
-.categories-wrapper{
+.categories-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.main-category a{
+.main-category a {
   transition: color 0.4s ease;
   transition-duration: 0.4s;
   transition-timing-function: ease;
@@ -75,7 +76,8 @@
 .main-category:hover {
   color: #e68751;
 }
-.search-section{
+
+.search-section {
   margin-top: 25px;
   float: right;
 }
@@ -92,7 +94,7 @@
   flex-direction: row;
   justify-content: end;
 }
-.btn{
+.btn {
   border-radius: 0px;
   border-left: 0px;
 }
@@ -145,7 +147,7 @@
   justify-content: space-between;
   float: left;
 }
-.ategories-wrapper{
+.ategories-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -154,7 +156,43 @@
   top: 100px;
   left: 0;
   width: 100%;
-  height: 230px;
   border-top: 1px solid #eee;
-  display: none;
+  background-color: #fff;
+  max-height: 0px;
+  display: flex;
+  z-index: 0;
+  justify-content: center;
+}
+.mean:hover + .mean .products-exhibit {
+  max-height: 230px;
+  z-index: 10;
+}
+.nav-Item {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-product {
+  text-align: center;
+  width: 100%;
+}
+.products-exhibit .container {
+  margin: 20px 0;
+}
+
+.main-product .product-price {
+  display: block;
+  color: #ff6700;
+  font-size: 14px;
+}
+.main-product .product-name {
+  display: block;
+  color: #424242;
+  font-size: 16px;
+}
+.main-product .product-img {
+  display: block;
+  width: 140px;
+  margin: 0 auto;
 }
