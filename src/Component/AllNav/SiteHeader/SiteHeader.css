@@ -137,7 +137,6 @@
 .shop-categories .categories-wrapper {
   height: 100%;
   float: left;
-  margin-left: 44px;
 }
 .shop-categories .nav-category,
 .shop-categories dl {
@@ -152,7 +151,7 @@
   margin: 0 15px;
   cursor: default;
 }
-.shop-categories .main-category a:hover{
+.shop-categories .main-category a:hover {
   color: #ff4a00;
 }
 .shop-categories .main-category {
@@ -197,4 +196,61 @@
 }
 .site-header .main-product {
   width: 204px;
+}
+/*  */
+.shop-categories .nav-category-section {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: -224px;
+  z-index: 121;
+  width: 234px;
+  font-size: 14px;
+}
+.shop-categories .nav-category {
+  position: relative;
+  font-weight: 600;
+  height: 100%;
+}
+.shop-categories .nav-category-section .nav-category-list {
+  height: 100%;
+  border: 0;
+  color: #fff;
+  background: #333;
+  background: rgba(0, 0, 0, 0.6);
+}
+.shop-categories .nav-category-list {
+  height: 418px;
+  margin: 0;
+  padding: 20px 0;
+  list-style-type: none;
+  border: 1px solid #ff6700;
+  color: #424242;
+  background: #fff;
+}
+.shop-categories .nav-category-list .nav-category-item .title {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  height: 42px;
+  line-height: 42px;
+  color: #424242;
+}
+.shop-categories .nav-category-list .nav-category-item .title:hover {
+  background-color: #ff6700;
+  color: #fff;
+}
+.shop-categories .nav-category-list .nav-category-item .title svg {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #e0e0e0;
+}
+.shop-categories .nav-category-section .nav-category-list .title {
+  color: #fff;
+}
+.shop-categories .nav-category-section {
+  display: block;
 }

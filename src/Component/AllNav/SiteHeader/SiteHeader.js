@@ -35,10 +35,12 @@ const siteHeader = () => {
   ));
 
   const listBars = listBar.map((list) => (
-    <ListGroup.Item action href="#link1" className="ListItem">
-      {list.content}
-      <BsChevronRight />
-    </ListGroup.Item>
+    <li className="nav-category-item">
+      <a href="#link1" className="title">
+        {list.content}
+        <BsChevronRight />
+      </a>
+    </li>
   ));
 
   return (
@@ -64,8 +66,8 @@ const siteHeader = () => {
             <div className="shop-categories" id="J_shopCategories">
               <div className="categories-wrapper J_navMainList">
                 <div className="nav-category nav-category-toggled">
-                  <div className="btn-category-list">
-                    <ListGroup>{listBars}</ListGroup>
+                  <div className="nav-category-section">
+                    <ul className="nav-category-list">{listBars}</ul>
                   </div>
                 </div>
                 {navEles}
