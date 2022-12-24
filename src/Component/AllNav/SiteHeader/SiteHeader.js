@@ -1,4 +1,5 @@
-import { Container, ListGroup } from "react-bootstrap";
+import React, { useState, useEffect, useRef } from "react";
+import { Container } from "react-bootstrap";
 import { FaSistrix } from "react-icons/fa";
 import { BsChevronRight } from "react-icons/bs";
 import "./SiteHeader.css";
@@ -6,20 +7,43 @@ import navEle from "./navEleData";
 import navItem from "./navItem";
 import listBar from "./listBarData";
 
-const siteHeader = () => {
+const SiteHeader = () => {
+  const [productBlock, setProductBlock] = useState(false);
+  const [prductBlockContent, setProductBlockContent] = useState(null);
+  const navMouseOut = (e) => {
+    setProductBlock((productBlock) => false);
+  };
+  const activeProduct = (e) => {
+    setProductBlock((productBlock) => true);
+    e.currentTarget.parentElement.classList.add("nav-item-active");
+    document
+      .querySelector(".header-nav-menu")
+      .classList.add("header-nav-menu-active");
+    let content = document
+      .querySelector(".nav-item-active")
+      .getElementsByClassName("products-exhibit")[0].innerHTML;
+    setProductBlockContent((prductBlockContent) => content);
+  };
+  const deActiveProduct = (e) => {
+    e.currentTarget.parentElement.classList.remove("nav-item-active");
+  };
+
   const navEles = navEle.map((list) => (
-    <dl className="nav-item">
-      <dt className="main-category">
+    <dl className={"nav-item"}>
+      <dt
+        className="main-category"
+        onMouseOver={activeProduct}
+        onMouseOut={deActiveProduct}
+      >
         <a>{list.content}</a>
       </dt>
       <dd className="products-exhibit">
         <Container className="products-exhibit-wrapper">
-          {console.log(list.key)}
           {navItem[list.key].map((list1) => (
             <div className="main-product">
               <img
                 className="prodcut-img"
-                src={"list1.ImgLink"}
+                src={list1.ImgLink}
                 alt={list1.name}
                 style={{ width: `140px`, height: `140px` }}
               ></img>
@@ -107,9 +131,18 @@ const siteHeader = () => {
         </Container>
       </div>
       <div></div>
-      <div></div>
+      <div
+        className="header-nav-menu"
+        style={{
+          borderTop: productBlock ? `1px solid #e0e0e0` : `0px solid #e0e0e0`,
+          maxHeight: productBlock ? "223px" : "0px",
+          transition: `max-height 0.2s`,
+        }}
+        onMouseLeave={navMouseOut}
+        dangerouslySetInnerHTML={{ __html: prductBlockContent }}
+      ></div>
     </div>
   );
 };
 
-export default siteHeader;
+export default SiteHeader;

@@ -1,4 +1,3 @@
-import React from "react";
 import TopBarNav from "./TopBarNav/TopBarNav";
 import SiteHeader from "./SiteHeader/SiteHeader";
 
