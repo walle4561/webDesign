@@ -13,13 +13,17 @@
 .site-topbar a {
   color: #b0b0b0;
 }
-.topbar-nav{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 .nav{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  height: 100%;
+}
+.other-nav{
+  display: flex;
+}
+.sing-account a:hover{
+  color: #fff;
+}
+.sing-account .shop-car:hover{
+  background: #fff;
 }

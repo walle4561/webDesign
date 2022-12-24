@@ -16,12 +16,18 @@ const topBarNav = () => {
             <span className="sep">|</span>
             <a href="https://event.mi.com/tw/business/">小米團購</a>
           </div>
-          <div className="sing-account">
-            <a href="https://buy.mi.com/tw/site/login">登入</a>
-            <span className="sep">|</span>
-            <a href="https://buy.mi.com/tw/site/login">註冊</a>
-            <span className="sep">|</span>
-            <span className="sep">購物車</span>
+          <div className="other-nav">
+            <div className="sing-account">
+              <a href="https://buy.mi.com/tw/site/login">登入</a>
+              <span className="sep">|</span>
+              <a href="https://buy.mi.com/tw/site/login">註冊</a>
+              <span className="sep">|</span>
+            </div>
+            <div className="shop-car">
+              <a className="" href="https://buy.mi.com/tw/cart">
+                購物車
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -5,42 +5,42 @@ const navItem = [
       ImgLink:
         "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver.png?width=140&height=140",
       name: "Xiaomi 12T Pro",
-      Link: "",
+      Link: "https://www.mi.com/tw/product/xiaomi-12t-pro/",
     },
     {
       price: "NT$16,999",
       ImgLink:
         "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/L12A-Blue.png?width=140&height=140",
       name: "Xiaomi 12T",
-      Link: "",
+      Link: "https://www.mi.com/tw/product/xiaomi-12t/",
     },
     {
       price: "NT$26,999",
       ImgLink:
         "https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12pro.png?width=140&height=140",
       name: "Xiaomi 12 Pro 5G",
-      Link: "",
+      Link: "https://www.mi.com/tw/product/xiaomi-12-pro",
     },
     {
       price: "NT$23,999",
       ImgLink:
         "https://i01.appmifile.com/webfile/globalweb/zhutuhktw/xiaomi-12.png?width=140&height=140",
       name: "Xiaomi 12 5G",
-      Link: "",
+      Link: "https://www.mi.com/tw/product/xiaomi-12",
     },
     {
       price: "NT$13,999",
       ImgLink:
         "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1657001340.34658983.png?width=140&height=140",
       name: "Xiaomi 12 Lite",
-      Link: "",
+      Link: "https://www.mi.com/tw/product/xiaomi-12-lite/",
     },
     {
       price: "NT$16999",
       ImgLink:
         "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/Xiaomi-12X-5G.png?width=140&height=140",
       name: "Xiaomi 12X 5G",
-      Link: "",
+      Link: "https://www.mi.com/tw/product/xiaomi-12x/",
     },
   ],
   [
@@ -49,35 +49,35 @@ const navItem = [
       ImgLink:
         "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1655438703.61665108.png?width=140&height=140",
       name: "Redmi 10C",
-      Link: "",
+      Link: "https://www.mi.com/tw/product/redmi-10c/",
     },
     {
       price: "NT$3,499",
       ImgLink:
         "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/redmi10a.png?width=140&height=140",
       name: "Redmi 10A",
-      Link: "",
+      Link: "https://www.mi.com/tw/product/redmi-10a/",
     },
     {
       price: "NT$6,499起",
       ImgLink:
         "https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/l19n-Silver.png?width=140&height=140",
       name: "Redmi 10 5G",
-      Link: "",
+      Link: "https://www.mi.com/tw/product/redmi-10-5g/",
     },
     {
       price: "NT$6,999",
       ImgLink:
         "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/k7s.png?width=140&height=140",
       name: "Redmi Note 11S",
-      Link: "",
+      Link: "https://www.mi.com/tw/product/redmi-note-11s/",
     },
     {
       price: "NT$ 11999",
       ImgLink:
         "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/K16U-Blue.png?width=140&height=140",
       name: "Redmi Note 11 Pro+ 5G",
-      Link: "",
+      Link: "https://www.mi.com/tw/product/redmi-note-11-pro-plus-5g/",
     },
   ],
   [
@@ -86,14 +86,14 @@ const navItem = [
       ImgLink:
         "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/K7BP-White.png?width=140&height=140",
       name: "POCO M5 系列",
-      Link: "",
+      Link: "https://www.mi.com/tw/product/poco-m5s/",
     },
     {
       price: "NT$ 19999",
       ImgLink:
         "https://i01.appmifile.com/webfile/globalimg/summer-1/Banner/L10-black.png?width=140&height=140",
       name: "POCO F4 GT",
-      Link: "",
+      Link: "https://www.mi.com/tw/product/poco-f4-gt/",
     },
     {
       price: "NT$ 11999",
@@ -107,7 +107,7 @@ const navItem = [
       ImgLink:
         "https://i01.appmifile.com/webfile/globalimg/summer-1/pic/K6P-blue.png?width=140&height=140",
       name: "POCO X4 Pro 5G",
-      Link: "",
+      Link: "https://www.mi.com/tw/product/poco-x4-pro-5g/",
     },
     {
       price: "NT$ 3999",

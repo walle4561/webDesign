@@ -1,11 +1,49 @@
-.home-page{
-  background-color: #fff;
+.home-hero-container {
+  background: #fff;
 }
-.warp{
-  position:relative;
-  top: 0px;
-  height: 100%;
+.home-hero {
+  position: relative;
+  margin-bottom: 26px;
 }
+.home-hero-slider {
+  position: relative;
+  height: 460px;
+}
+.home-hero-slider .slide {
+  width: 1226px;
+  height: 460px;
+}
+.home-hero-sub {
+  margin-top: 14px;
+  width: 1226px;
+  overflow: hidden;
+}
+.home-hero-sub img {
+  width: 296px;
+  height: 170px;
+}
+.home-hero-sub .home-promo-list {
+  width: 1240px;
+}
+.home-hero-sub li {
+  float: left;
+  width: 296px;
+  height: 170px;
+  margin-right: 14px;
+  transition: box-shadow .2s linear;
+}
+.home-invite {
+  display: block;
+  width: 1226px;
+  height: 120px;
+  margin: 16px auto 0;
+  transition: box-shadow .2s linear;
+}
+.home-invite-img {
+  width: 1226px;
+  height: 120px;
+}
+
 .carousel-indicators {
   justify-content: end;
   margin: 0px;
@@ -30,27 +68,7 @@
 .carousel-control-prev:hover {
   background: rgba(0, 0, 0, 0.6);
 }
-.carousel-control-next {
-  width: 46px;
-}
-
 .carousel-control-next:hover {
   background: rgba(0, 0, 0, 0.6);
 }
-.home-invite-img {
-  width: 1226px;
-  height: 120px;
-}
-.subhome-page{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 14px;
-}
-.subhome-page a {
-  margin-bottom: 10px;
-}
-.home-page .list1 a:hover{
-  background-color: #ff6700;
-}
+
