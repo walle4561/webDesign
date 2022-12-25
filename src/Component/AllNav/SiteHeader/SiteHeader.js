@@ -6,6 +6,7 @@ import "./SiteHeader.css";
 import navEle from "./navEleData";
 import navItem from "./navItem";
 import listBar from "./listBarData";
+import listBarEle from "./listBarEleData";
 
 const SiteHeader = () => {
   const [productBlock, setProductBlock] = useState(false);
@@ -15,8 +16,8 @@ const SiteHeader = () => {
   useEffect(() => {
     const handleScroll = () => {
       var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if(scrollTop>140)setNavHiden(false)
-      else setNavHiden(true)
+      if (scrollTop > 40) setNavHiden(false);
+      else setNavHiden(true);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
@@ -44,6 +45,28 @@ const SiteHeader = () => {
   };
   const deActiveProduct = (e) => {
     e.currentTarget.parentElement.classList.remove("nav-item-active");
+  };
+
+  const [navListLiOVer, setNavListLiOver] = useState(true);
+  const [navListLiOut, setNavListLiOut] = useState(false);
+  const [navListUlOver, setNavListUlOver] = useState(false);
+
+  const navListLiMouseOver = (e) => {
+    setNavListLiOver((navListLiOVer) => true);
+    e.currentTarget.parentElement.classList.add("current");
+  };
+
+  const navListMouseLiLeave = (e) => {
+    setNavListLiOut((navListLiOut) => true);
+    setNavListLiOver((navListLiOVer) => false);
+  };
+
+  const navListUlMouseOver = (e) => {
+    setNavListUlOver((navListUlOver) => true);
+  };
+
+  const navListUlMouseLeave = (e) => {
+    e.currentTarget.parentElement.classList.remove("current");
   };
 
   const navEles = navEle.map((list) => (
@@ -79,11 +102,44 @@ const SiteHeader = () => {
   ));
 
   const listBars = listBar.map((list) => (
-    <li className="nav-category-item">
-      <a href="#link1" className="title">
-        {list.content}
-        <BsChevronRight />
+    <li className={"nav-category-item"} data-Index={list.id + 1}>
+      <a
+        href="#link1"
+        className="title"
+        onMouseOver={navListLiMouseOver}
+        onMouseLeave={navListMouseLiLeave}
+      >
+        {list.content} <BsChevronRight />
       </a>
+
+      {listBarEle[list.id].map((list1) => (
+        <div
+          className={"children children-col-" + list1.size}
+          onMouseOver={navListUlMouseOver}
+          onMouseLeave={navListUlMouseLeave}
+        >
+          {list1.listItem.map((list2) => (
+            <ul
+              className={
+                "children-list children-list-col children-list-col-" + list2.id
+              }
+            >
+              {list2.listBarLi.map((list3) => (
+                <li>
+                  <a className="link" href={list3.link}>
+                    <img
+                      className="thumb img-loaded"
+                      src={list3.imgLink}
+                      alt={list3.name}
+                    ></img>
+                    <span className="text">{list3.name}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ))}
+        </div>
+      ))}
     </li>
   ));
 

@@ -22,6 +22,9 @@
   line-height: 16px;
   margin: -1px;
 }
+.control:hover{
+  color:#212121;
+}
 .home-star-goods .goods-list li {
   height: 300px;
   padding-top: 39px;
