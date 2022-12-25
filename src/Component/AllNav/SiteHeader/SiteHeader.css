@@ -254,9 +254,9 @@
   line-height: 42px;
   color: #424242;
 }
-.shop-categories .nav-category-list .nav-category-item .title:hover {
-  background-color: #ff6700;
-  color: #fff;
+.shop-categories .nav-category-list .nav-category-item.current .title {
+    background: #ff6700;
+    color: #fff;
 }
 .shop-categories .nav-category-list .nav-category-item .title svg {
   position: absolute;

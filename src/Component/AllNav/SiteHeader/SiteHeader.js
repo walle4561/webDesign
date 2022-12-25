@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Container } from "react-bootstrap";
 import { FaSistrix } from "react-icons/fa";
 import { BsChevronRight } from "react-icons/bs";
@@ -46,23 +46,27 @@ const SiteHeader = () => {
   const deActiveProduct = (e) => {
     e.currentTarget.parentElement.classList.remove("nav-item-active");
   };
-
-  const [navListLiOVer, setNavListLiOver] = useState(true);
-  const [navListLiOut, setNavListLiOut] = useState(false);
-  const [navListUlOver, setNavListUlOver] = useState(false);
-
+  const dataIndex = useRef(0);
+  const beforeEvent = useRef(null);
   const navListLiMouseOver = (e) => {
-    setNavListLiOver((navListLiOVer) => true);
-    e.currentTarget.parentElement.classList.add("current");
+    const after = dataIndex.current;
+    dataIndex.current =
+      e.target.parentElement.attributes.getNamedItem("data-Index").value;
+    const before = dataIndex.current;
+
+    const afterEvent = beforeEvent.current;
+    beforeEvent.current = e.target.parentElement;
+
+    if (after != before) {
+      e.currentTarget.parentElement.classList.add("current");
+      if (afterEvent != null) {
+        afterEvent.classList.remove("current");
+      }
+    }
   };
 
   const navListMouseLiLeave = (e) => {
-    setNavListLiOut((navListLiOut) => true);
-    setNavListLiOver((navListLiOVer) => false);
-  };
-
-  const navListUlMouseOver = (e) => {
-    setNavListUlOver((navListUlOver) => true);
+    e.currentTarget.parentElement.classList.remove("current");
   };
 
   const navListUlMouseLeave = (e) => {
@@ -104,20 +108,13 @@ const SiteHeader = () => {
   const listBars = listBar.map((list) => (
     <li className={"nav-category-item"} data-Index={list.id + 1}>
       <a
-        href="#link1"
         className="title"
         onMouseOver={navListLiMouseOver}
-        onMouseLeave={navListMouseLiLeave}
       >
         {list.content} <BsChevronRight />
       </a>
-
       {listBarEle[list.id].map((list1) => (
-        <div
-          className={"children children-col-" + list1.size}
-          onMouseOver={navListUlMouseOver}
-          onMouseLeave={navListUlMouseLeave}
-        >
+        <div className={"children children-col-" + list1.size} onMouseLeave={navListUlMouseLeave}>
           {list1.listItem.map((list2) => (
             <ul
               className={

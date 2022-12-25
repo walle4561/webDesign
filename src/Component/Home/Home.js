@@ -14,19 +14,22 @@ const Home = () => {
     </Carousel.Item>
   ));
 
+  const onMouseOverHome = (e) => {
+    document.querySelector(".nav-category-item").classList.remove("current");
+  };
   return (
     <>
-      <div className="home-hero-container">
+      <div className="home-hero-container" onMouseOver={onMouseOverHome}>
         <Container>
           <div className="home-hero">
             <div className="home-hero-slider">
-                <Carousel
-                  className="xm-slider"
-                  style={{ maxWidth: `100%` }}
-                  fade={true}
-                >
-                  {lists}
-                </Carousel>
+              <Carousel
+                className="xm-slider"
+                style={{ maxWidth: `100%` }}
+                fade={true}
+              >
+                {lists}
+              </Carousel>
             </div>
             <div className="home-hero-sub">
               <ul className="home-promo-list">
