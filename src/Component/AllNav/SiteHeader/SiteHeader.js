@@ -57,16 +57,12 @@ const SiteHeader = () => {
     const afterEvent = beforeEvent.current;
     beforeEvent.current = e.target.parentElement;
 
-    if (after != before) {
+    if (after !== before) {
       e.currentTarget.parentElement.classList.add("current");
       if (afterEvent != null) {
         afterEvent.classList.remove("current");
       }
     }
-  };
-
-  const navListMouseLiLeave = (e) => {
-    e.currentTarget.parentElement.classList.remove("current");
   };
 
   const navListUlMouseLeave = (e) => {
@@ -107,7 +103,7 @@ const SiteHeader = () => {
 
   const listBars = listBar.map((list) => (
     <li className={"nav-category-item"} data-Index={list.id + 1}>
-      <a
+      <a href=""
         className="title"
         onMouseOver={navListLiMouseOver}
       >
