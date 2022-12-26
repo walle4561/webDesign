@@ -103,14 +103,14 @@ const SiteHeader = () => {
 
   const listBars = listBar.map((list) => (
     <li className={"nav-category-item"} data-Index={list.id + 1}>
-      <a href=""
-        className="title"
-        onMouseOver={navListLiMouseOver}
-      >
+      <a href="" className="title" onMouseOver={navListLiMouseOver}>
         {list.content} <BsChevronRight />
       </a>
       {listBarEle[list.id].map((list1) => (
-        <div className={"children children-col-" + list1.size} onMouseLeave={navListUlMouseLeave}>
+        <div
+          className={"children children-col-" + list1.size}
+          onMouseLeave={navListUlMouseLeave}
+        >
           {list1.listItem.map((list2) => (
             <ul
               className={
@@ -145,7 +145,7 @@ const SiteHeader = () => {
               <img
                 className="milogo-main"
                 src="https://i01.appmifile.com/webfile/globalimg/pandora/mi-logo.svg"
-              />
+              ></img>
             </div>
             <div className="doodle" style={{ display: "block" }}>
               <a
